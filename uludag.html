@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Uludağ - My Travel Journal</title>
+    <link rel="stylesheet" href="uludag.css">
+</head>
+<body>
+    <!-- Navbar kismi -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <h1 class="logo">Gezi Günlüğüm </h1>
+            <ul class="nav-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="hakkimda.html">About Me</a></li>
+                <li><a href="gallery.html" class="active">Gallery</a></li>
+                <li><a href="/BilgiVeRehber/iletisim.html">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- baslik -->
+    <section class="page-header">
+        <h1>Uludağ</h1>
+        <p>Turkey’s legendary mountain</p>
+    </section>
+
+    <!-- icerik -->
+    <section class="content-section">
+        <div class="container">
+            
+            <div class="intro-text">
+                <h2>About Uludağ</h2>
+                <p>
+                    Uludağ is one of Turkey’s most important mountains, located in the province of Bursa,
+                    with an elevation of 2,543 meters. Known as “Olympos Mysios” (Phrygian Olympus) in ancient times,
+                    Uludağ attracts visitors throughout the year with its historical and natural beauty.
+                </p>
+                <p>
+                    Popular as a ski resort in winter and a destination for hiking and camping in summer,
+                    Uludağ is Turkey’s first national park. With its rich vegetation and breathtaking landscapes,
+                    this magnificent mountain offers a unique experience to every visitor.
+                </p>
+            </div>
+
+            <div class="photo-section">
+                <div class="photo-block">
+                    <div class="photo-large" style="background-image: url('img/evlerKarsiz.JPG');" onclick="openModal('img/evlerKarsiz.JPG')"></div>
+                    <div class="photo-description">
+                        <h3>Snowy Peaks and City View</h3>
+                        <p>
+                            From the summit of Uludağ, visitors can enjoy a stunning view of the city of Bursa.
+                            Snow-covered houses and city lights create a mesmerizing scene,
+                            especially during sunset.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="photo-block reverse">
+                    <div class="photo-large" style="background-image: url('img/karliEv2.JPG');" onclick="openModal('img/karliEv2.JPG')"></div>
+                    <div class="photo-description">
+                        <h3>Mountain Villages and Daily Life</h3>
+                        <p>
+                            The villages on the slopes of Uludağ continue to preserve their traditional lifestyle.
+                            During winter, these villages covered in snow gain a fairytale-like appearance.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="photo-block">
+                    <div class="photo-large" style="background-image: url('img/f80d355d-8d7e-4753-8d30-7168358af4c2.JPG');" onclick="openModal('img/f80d355d-8d7e-4753-8d30-7168358af4c2.JPG')"></div>
+                    <div class="photo-description">
+                        <h3>Nature Hiking Trails</h3>
+                        <p>
+                            Uludağ offers many hiking trails passing through forested areas.
+                            These routes provide a unique experience for nature lovers.
+                            Displaying different beauty in every season, they are ideal for photography.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Why It Is Special -->
+            <div class="special-section">
+                <h2>Why Are Bursa and Uludağ Special to Me?</h2>
+                <div class="special-grid">
+                    <div class="special-box">
+                        <h3>🏔️ Stunning Landscapes</h3>
+                        <p>Offering a different beauty from every angle, Uludağ feels like paradise for photography enthusiasts.</p>
+                    </div>
+                    <div class="special-box">
+                        <h3>🌲 Close to Nature</h3>
+                        <p>It allows you to enjoy a peaceful environment away from the noise of the city.</p>
+                    </div>
+                    <div class="special-box">
+                        <h3>❄️ Beauty in All Four Seasons</h3>
+                        <p>Uludağ reveals a different charm in every season, offering new surprises with each visit.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="cta-section">
+                <h2>Would You Like to See More Photos?</h2>
+                <p>If you would like to learn more about Uludağ and explore more photos, you can visit the link below.</p>
+                <a href="https://www.uludaginfo.com/tr" class="cta-button">Go to the Uludağ Gallery</a>
+            </div>
+
+        </div>
+    </section>
+
+    <div id="photoModal" class="modal">
+        <span class="modal-close" onclick="closeModal()">&times;</span>
+        <img class="modal-content" id="modalImage">
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>&copy; 2026 Gezi Günlüğüm | Web Design Final Project</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

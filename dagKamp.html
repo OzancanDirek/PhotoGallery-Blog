@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Uludağ - My Travel Journal</title>
+    <link rel="stylesheet" href="dagKamp.css">
+</head>
+
+<body>
+    <!-- nAVBAR kismi -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <h1 class="logo">Gezi Günlüğüm </h1>
+            <ul class="nav-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="hakkimda.html">About Me</a></li>
+                <li><a href="gallery.html" class="active">Gallery</a></li>
+                <li><a href="/BilgiVeRehber/iletisim.html">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- tepe baslik -->
+    <section class="page-header">
+        <h1>Mountain Camping</h1>
+        <p>Alone with Nature in the Middle of Winter</p>
+    </section>
+
+    <section class="content-section">
+        <div class="container">
+
+            <div class="intro-text">
+                <h2>My Camping Experiences</h2>
+                <p>
+                    Because I enjoy being alone with nature and escaping the chaos of city life, I have experienced
+                    various camping trips at different times. Each camp became an opportunity for both relaxation and
+                    self-discovery. Waking up to the sound of birds in the morning, spending nights around a campfire,
+                    and watching the stars are among my unforgettable memories.
+
+                    During my camping trips, I usually engaged in activities such as setting up tents, lighting fires,
+                    hiking, and exploring the surroundings. Through these experiences, I learned how to live in harmony
+                    with nature and make the most of minimal resources. At the same time, I captured many photos to
+                    immortalize these moments.
+                </p>
+                <p>
+                    The photos on this page reflect landscapes from camping areas, sunrise and sunset moments, tent
+                    setups, and joyful times spent in nature. Each frame represents a part of my experiences and holds
+                    a special meaning for me.
+
+                    My camping experiences taught me patience, respect for nature, and how to enjoy the present
+                    moment. In the future, I aim to discover new routes and update this page with new memories.
+                </p>
+            </div>
+
+            <!-- fotograflar -->
+            <div class="photo-section">
+                <div class="photo-block">
+                    <div class="photo-large" style="background-image: url('img/selaleKarli.JPG');"
+                        onclick="openModal('img/selaleKarli.JPG')"></div>
+                    <div class="photo-description">
+                        <h3>A Waterfall Among the Snow</h3>
+                        <p>
+                            This waterfall, one of nature’s wonders, becomes covered in a pure white blanket during
+                            winter and offers a breathtaking view.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="photo-block reverse">
+                    <div class="photo-large" style="background-image: url('img/isikliDag.JPG');"
+                        onclick="openModal('img/isikliDag.JPG')"></div>
+                    <div class="photo-description">
+                        <h3>Lights of Life</h3>
+                        <p>
+                            The play of light formed by sunrise and sunset on mountain peaks creates one of nature’s
+                            most beautiful moments. These scenes offer unique opportunities for photography
+                            enthusiasts.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- neden ozel ksmi -->
+            <div class="special-section">
+                <h2>So why is this camp special to me?</h2>
+                <div class="special-grid">
+                    <div class="special-box">
+                        <h3>🏔️ A Perfect Experience</h3>
+                        <p>
+                            It offers an experience where you truly face yourself. The peace provided by nature also
+                            creates an excellent opportunity for mental and physical renewal.
+                        </p>
+                    </div>
+                    <div class="special-box">
+                        <h3>🌲 Connected with Nature</h3>
+                        <p>
+                            Away from the noise of the city, you can be alone with nature in a calm and peaceful
+                            environment.
+                        </p>
+                    </div>
+                    <div class="special-box">
+                        <h3>❄️ Beauty in Every Season</h3>
+                        <p>
+                            Getting lost in the snow-covered scenery brought by winter is a wonderful opportunity to
+                            experience this unique landscape offered by nature.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div id="photoModal" class="modal">
+        <span class="modal-close" onclick="closeModal()">&times;</span>
+        <img class="modal-content" id="modalImage">
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>&copy; 2026 Gezi Günlüğüm | Web Design Final Project</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

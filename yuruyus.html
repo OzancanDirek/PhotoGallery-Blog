@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Walking Landscapes - My Travel Journal</title>
+    <link rel="stylesheet" href="yuruyus.css">
+</head>
+
+<body>
+
+    <!-- TOP MENU -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <h1 class="logo">Gezi Günlüğüm </h1>
+            <ul class="nav-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="hakkimda.html">About Me</a></li>
+                <li><a href="gallery.html" class="active">Gallery</a></li>
+                <li><a href="/BilgiVeRehber/iletisim.html">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- PAGE HEADER -->
+    <section class="page-header">
+        <h1>Walking Landscapes</h1>
+        <p>Peaceful walking views where nature and the rhythm of footsteps come together</p>
+    </section>
+
+    <!-- CONTENT -->
+    <section class="gallery-content">
+        <div class="container">
+
+            <!-- DESCRIPTION -->
+            <div class="category-section">
+                <h2 class="category-title">🏃 Walking and Tranquility</h2>
+                <p>
+                    Walking is not just a physical activity for me;
+                    it is also one of the simplest ways to connect with nature,
+                    clear the mind, and live in the moment.
+                    On this page, I share landscape photos taken during my nature walks
+                    in different seasons and lighting conditions.
+                </p>
+            </div>
+
+            <!-- GALLERY -->
+            <div class="category-section">
+                <h2 class="category-title">📸 Walking Photos</h2>
+
+                <div class="gallery-grid">
+
+                    <div class="gallery-card" onclick="openModal('img/yolDagda.JPG')">
+                        <div class="card-image" style="background-image:url('img/yolDagda.JPG')"></div>
+                        <div class="card-content">
+                            <h3>Silence of the Mountains</h3>
+                            <p>The natural rhythm created by trees strengthened by the wind among the mountains.</p>
+                        </div>
+                    </div>
+
+                    <div class="gallery-card" onclick="openModal('img/karanlikYol.JPG')">
+                        <div class="card-image" style="background-image:url('img/karanlikYol.JPG')"></div>
+                        <div class="card-content">
+                            <h3>Walking in Nature</h3>
+                            <p>A peaceful walk along a bright path surrounded by nature in the evening.</p>
+                        </div>
+                    </div>
+
+                    <div class="gallery-card" onclick="openModal('/img/dogaYol.JPG')">
+                        <div class="card-image" style="background-image:url('/img/dogaYol.JPG')"></div>
+                        <div class="card-content">
+                            <h3>Quiet Shore</h3>
+                            <p>A calm shoreline far from crowds, existing only with the sound of nature.</p>
+                        </div>
+                    </div>
+
+                    <div class="gallery-card" onclick="openModal('/img/BulutluYol.JPG')">
+                        <div class="card-image" style="background-image:url('/img/BulutluYol.JPG')"></div>
+                        <div class="card-content">
+                            <h3>Endless Road</h3>
+                            <p>An endless road line disappearing into the clouds.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <div id="photoModal" class="modal">
+        <span class="modal-close" onclick="closeModal()">&times;</span>
+        <img class="modal-content" id="modalImage">
+    </div>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <p>&copy; 2026 Gezi Günlüğüm | Web Design Final Project</p>
+    </footer>
+
+    <!-- JS -->
+    <script src="script.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me - My Travel Journal</title>
+    <link rel="stylesheet" href="hakkimda.css">
+</head>
+
+<body>
+    <!-- Navbar kismi -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <h1 class="logo">Gezi Günlüğüm </h1>
+            <ul class="nav-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="hakkimda.html" class="active">About Me</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="/BilgiVeRehber/iletisim.html">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section class="page-header">
+        <h1>About Me</h1>
+        <p>My passion for nature and photography</p>
+    </section>
+
+    <!-- İcerik kismi -->
+    <section class="about-content">
+        <div class="container">
+            <div class="about-grid">
+                <div class="about-photo">
+                    <img src="img/ben.JPG" alt="Profile Photo" onclick="openModal('img/ben.JPG')">
+                </div>
+
+                <div class="about-text">
+                    <h2>Hello!</h2>
+                    <p>
+                        As a nature and photography enthusiast, I enjoy exploring Turkey’s breathtaking
+                        natural landscapes and capturing these moments through my camera. Mountain hiking
+                        and outdoor activities are among my main interests.
+                    </p>
+                    <p>
+                        Uludağ holds a special place for me. With every hike I take there, I discover a
+                        different side of nature. Snowy peaks, forest paths, and stunning sunsets…
+                        Each photograph tells its own story.
+                    </p>
+                    <p>
+                        This website was created to share both my photography journey and what I have
+                        learned throughout my Web Design course. I hope my photos allow you to feel
+                        the beauty of nature as well.
+                    </p>
+
+                    <div class="about-info">
+                        <h3>My Interests</h3>
+                        <ul>
+                            <li>Nature Photography</li>
+                            <li>Mountain Hiking and Trekking</li>
+                            <li>Landscape Photography</li>
+                            <li>Outdoor Sports</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- siteyi niye yapotım -->
+            <div class="why-section">
+                <h2>Why Did I Create This Website?</h2>
+                <div class="why-grid">
+                    <div class="why-box">
+                        <div class="why-img" style="background-image: url('img/Atasehir.jpg');"
+                            onclick="openModal('img/Atasehir.jpg')"></div>
+                        <h3>To Share My Photos</h3>
+                        <p>I wanted to present my photographs in an organized way and share them with others.</p>
+                    </div>
+                    <div class="why-box">
+                        <div class="why-img" style="background-image: url('img/ben2.jpg');"
+                            onclick="openModal('img/ben2.jpg')"></div>
+                        <h3>To Learn Web Design</h3>
+                        <p>I wanted to learn how to design a modern website using HTML and CSS.</p>
+                    </div>
+                    <div class="why-box">
+                        <div class="why-img" style="background-image: url('img/Karavan.JPG');"
+                            onclick="openModal('img/Karavan.JPG')"></div>
+                        <h3>To Promote Love for Nature</h3>
+                        <p>I aimed to increase people’s interest in nature and raise awareness.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div id="photoModal" class="modal">
+        <span class="modal-close" onclick="closeModal()">&times;</span>
+        <img class="modal-content" id="modalImage">
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>&copy; 2026 Gezi Günlüğüm | Web Design Final Project</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

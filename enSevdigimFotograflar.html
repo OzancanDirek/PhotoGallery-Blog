@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Favorite Photos - My Travel Journal</title>
+    <link rel="stylesheet" href="enSevdigimFotograflar.css">
+</head>
+
+<body>
+
+    <!-- Navbar kismi -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <h1 class="logo">Gezi Günlüğüm </h1>
+            <ul class="nav-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="hakkimda.html">About Me</a></li>
+                <li><a href="gallery.html" class="active">Gallery</a></li>
+                <li><a href="/BilgiVeRehber/iletisim.html">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- baslik -->
+    <section class="page-header">
+        <h1>My Favorite Landscapes</h1>
+        <p>These are the photos I enjoyed taking the most and my favorites.</p>
+    </section>
+
+    <!-- icerik -->
+    <section class="gallery-content">
+        <div class="container">
+
+            <div class="category-section">
+                <h2 class="category-title">⭐ My Favorite Shots</h2>
+                <p>
+                    The photographs on this page consist of moments that hold a special place among all the images
+                    I have taken so far. Each one is not just a landscape, but a memory that reflects my emotions,
+                    the atmosphere of the moment, and the experience I lived through.
+                </p>
+                <p>
+                    While capturing these favorite photos, I mostly focused on seizing the moment rather than
+                    planning the shot. A beam of light hitting the landscape at the right angle, the slow
+                    dispersal of fog, or an unexpected silence made these frames unforgettable for me.
+                </p>
+                <p>
+                    These photographs represent a calm evening by the sea, a summit reached during a mountain hike,
+                    or the untouched beauty of nature. What makes them my favorites is not technical perfection,
+                    but the feelings they gave me at the moment they were taken.
+                </p>
+            </div>
+
+            <!-- Galeri kismi -->
+            <div class="category-section">
+                <h2 class="category-title">📸 Favorite Photographs</h2>
+
+                <div class="gallery-grid">
+
+                    <div class="gallery-card" onclick="openModal('/img/sunset.JPG')">
+                        <div class="card-image" style="background-image:url('/img/sunset.JPG')"></div>
+                        <div class="card-content">
+                            <h3>Dominance of Orange</h3>
+                            <p>A wave scene captured on a windy day by the shore.</p>
+                        </div>
+                    </div>
+
+                    <div class="gallery-card" onclick="openModal('/img/YesilYol.JPG')">
+                        <div class="card-image" style="background-image:url('/img/YesilYol.JPG')"></div>
+                        <div class="card-content">
+                            <h3>The Green Path</h3>
+                            <p>A calm moment when the sun meets the landscape.</p>
+                        </div>
+                    </div>
+
+                    <div class="gallery-card" onclick="openModal('/img/karKapli.JPG')">
+                        <div class="card-image" style="background-image:url('/img/karKapli.JPG')"></div>
+                        <div class="card-content">
+                            <h3>White and Nature</h3>
+                            <p>A peaceful scene away from the crowds.</p>
+                        </div>
+                    </div>
+
+                    <div class="gallery-card" onclick="openModal('/img/deniz.JPG')">
+                        <div class="card-image" style="background-image:url('/img/deniz.JPG')"></div>
+                        <div class="card-content">
+                            <h3>The Horizon</h3>
+                            <p>The point where the sea and the sky come together.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- MODAL -->
+    <div id="photoModal" class="modal">
+        <span class="modal-close" onclick="closeModal()">&times;</span>
+        <img class="modal-content" id="modalImage">
+    </div>
+
+    <!-- footer alani -->
+    <footer class="footer">
+        <p>&copy; 2026 Gezi Günlüğüm | Web Design Final Project</p>
+    </footer>
+
+    <!-- JS -->
+    <script src="script.js"></script>
+
+</body>
+
+</html>

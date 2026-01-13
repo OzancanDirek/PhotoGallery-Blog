@@ -1,0 +1,311 @@
+/* Genel Ayarlar */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: #2c3e50;
+    background-color: #f8f9fa;
+}
+
+/* Navigasyon Menüsü */
+.navbar {
+    background-color: #1a1a1a;
+    padding: 20px 0;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+}
+
+.nav-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    color: white;
+    font-size: 28px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.nav-menu {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+}
+
+.nav-menu a {
+    color: #ddd;
+    text-decoration: none;
+    font-size: 16px;
+    padding: 8px 15px;
+    border-radius: 5px;
+    transition: all 0.3s;
+}
+
+.nav-menu a:hover {
+    background-color: #333;
+    color: white;
+}
+
+.nav-menu a.active {
+    background: linear-gradient(to bottom, rgba(247, 245, 245, 0.4), rgba(85, 64, 247, 0.6));
+    color: white;
+}
+
+/* Sayfa Başlığı */
+.page-header {
+    background: linear-gradient(135deg, #25019c 0%, #111111 100%);
+    color: white;
+    text-align: center;
+    padding: 100px 20px 80px;
+    position: relative;
+    overflow: hidden;
+}
+
+.page-header::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: radial-gradient(circle, rgba(255, 255, 255, 0.1) 1px, transparent 1px);
+    background-size: 50px 50px;
+    animation: movePattern 20s linear infinite;
+}
+
+@keyframes movePattern {
+    0% {
+        transform: translate(0, 0);
+    }
+
+    100% {
+        transform: translate(50px, 50px);
+    }
+}
+
+.page-header h1 {
+    font-size: 52px;
+    margin-bottom: 15px;
+    font-weight: 600;
+    letter-spacing: -1px;
+    position: relative;
+    z-index: 1;
+}
+
+.page-header p {
+    font-size: 18px;
+    opacity: 0.95;
+    font-weight: 300;
+    position: relative;
+    z-index: 1;
+}
+
+/* Container */
+.container {
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 0 30px;
+}
+
+/* Galeri İçeriği */
+.gallery-content {
+    padding: 70px 0 90px;
+    background-color: #f8f9fa;
+}
+
+/* Kategori Bölümleri */
+.category-section {
+    margin-bottom: 80px;
+}
+
+.category-title {
+    font-size: 34px;
+    color: #1a1a1a;
+    margin-bottom: 45px;
+    font-weight: 500;
+    letter-spacing: -0.5px;
+    position: relative;
+    padding-left: 20px;
+}
+
+.category-title::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 5px;
+    height: 70%;
+    background: linear-gradient(to bottom, #667eea, #764ba2);
+    border-radius: 3px;
+}
+
+/* Galeri Grid - Bento Box Layout */
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 25px;
+    grid-auto-rows: 180px;
+}
+
+/* Her kart için farklı boyutlar */
+.gallery-card:nth-child(1) {
+    grid-column: span 7;
+    grid-row: span 2;
+}
+
+.gallery-card:nth-child(2) {
+    grid-column: span 5;
+    grid-row: span 2;
+}
+
+.gallery-card:nth-child(3) {
+    grid-column: span 5;
+    grid-row: span 2;
+}
+
+.gallery-card:nth-child(4) {
+    grid-column: span 7;
+    grid-row: span 2;
+}
+
+/* Galeri Kartları */
+.gallery-card {
+    background-color: white;
+    overflow: hidden;
+    text-decoration: none;
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    position: relative;
+    border-radius: 16px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+}
+
+.gallery-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 40px rgba(102, 126, 234, 0.2);
+}
+
+.gallery-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(to bottom, transparent 40%, rgba(0, 0, 0, 0.7) 100%);
+    opacity: 0;
+    transition: opacity 0.4s;
+    z-index: 1;
+}
+
+.gallery-card:hover::before {
+    opacity: 1;
+}
+
+.card-image {
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    transition: transform 0.6s ease;
+    filter: brightness(0.95);
+}
+
+.gallery-card:hover .card-image {
+    transform: scale(1.08);
+    filter: brightness(1);
+}
+
+.card-content {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 30px;
+    z-index: 2;
+    transform: translateY(15px);
+    opacity: 0;
+    transition: all 0.4s ease;
+}
+
+.gallery-card:hover .card-content {
+    transform: translateY(0);
+    opacity: 1;
+}
+
+.card-content h3 {
+    font-size: 22px;
+    color: white;
+    margin-bottom: 8px;
+    font-weight: 600;
+    text-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+}
+
+.card-content p {
+    font-size: 14px;
+    color: #f0f0f0;
+    margin-bottom: 15px;
+    line-height: 1.5;
+    text-shadow: 0 1px 4px rgba(0, 0, 0, 0.3);
+}
+
+.card-badge {
+    display: inline-block;
+    background: linear-gradient(135deg, #dddde0 0%, #013bcf 100%);
+    color: white;
+    padding: 7px 16px;
+    border-radius: 20px;
+    font-size: 11px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    box-shadow: 0 4px 15px rgba(102, 126, 234, 0.4);
+}
+
+/* Footer */
+.footer {
+    background-color: #1a1a1a;
+    color: white;
+    text-align: center;
+    padding: 30px;
+}
+
+.footer p {
+    font-size: 14px;
+    color: #aaa;
+}
+
+/* Responsive Tasarım */
+@media (max-width: 1200px) {
+    .container {
+        padding: 0 25px;
+    }
+
+    .gallery-grid {
+        grid-template-columns: repeat(6, 1fr);
+        grid-auto-rows: 170px;
+        gap: 20px;
+    }
+
+    .gallery-card:nth-child(1),
+    .gallery-card:nth-child(4) {
+        grid-column: span 6;
+    }
+
+    .gallery-card:nth-child(2),
+    .gallery-card:nth-child(3) {
+        grid-column: span 3;
+    }
+}

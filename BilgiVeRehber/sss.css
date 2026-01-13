@@ -1,0 +1,145 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    color: #333;
+}
+
+/* NAVBAR */
+.navbar {
+    background-color: #1a1a1a;
+    padding: 20px 0;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.3);
+}
+
+.nav-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    color: white;
+    font-size: 28px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.nav-menu {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+}
+
+.nav-menu a {
+    color: #ddd;
+    text-decoration: none;
+    font-size: 16px;
+    padding: 8px 15px;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+.nav-menu a:hover {
+    background-color: #333;
+    color: white;
+}
+
+.nav-menu a.active {
+    background: linear-gradient(to bottom, rgba(247, 245, 245, 0.4), rgba(85, 64, 247, 0.6));
+    color: white;
+}
+
+
+/* SAYFA BAŞLIĞI */
+.page-header {
+    background: linear-gradient(135deg, #25019c 0%, #111111 100%);
+    color: white;
+    text-align: center;
+    padding: 80px 20px;
+}
+
+.page-header h1 {
+    font-size: 42px;
+    margin-bottom: 10px;
+}
+
+.page-header p {
+    font-size: 18px;
+}
+
+/* CONTAINER */
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* İÇERİK */
+.sss-content {
+    background-color: white;
+    padding: 50px 0;
+}
+
+/* SORULAR BÖLÜMÜ */
+.faq-section {
+    margin-bottom: 40px;
+}
+
+.faq-item {
+    background-color: #f9f9f9;
+    border-left: 4px solid #e74c3c;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.faq-question {
+    font-size: 20px;
+    color: #2c3e50;
+    margin-bottom: 12px;
+}
+
+.faq-answer {
+    font-size: 16px;
+    color: #555;
+    line-height: 1.6;
+}
+
+/* BİLGİ KUTUSU */
+.info-box {
+    background-color: #fff3cd;
+    border: 2px solid #ffc107;
+    padding: 25px;
+    margin-top: 30px;
+}
+
+.info-box h3 {
+    font-size: 22px;
+    color: #856404;
+    margin-bottom: 12px;
+}
+
+.info-box p {
+    font-size: 16px;
+    color: #856404;
+    line-height: 1.6;
+}
+
+/* FOOTER */
+.footer {
+    background-color: #1a1a1a;
+    color: #aaa;
+    text-align: center;
+    padding: 30px;
+}

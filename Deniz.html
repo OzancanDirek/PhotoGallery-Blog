@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sea Views - My Travel Journal</title>
+    <link rel="stylesheet" href="deniz.css">
+</head>
+
+<body>
+
+    <!-- Navbar kismi -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <h1 class="logo">Gezi Günlüğüm </h1>
+            <ul class="nav-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="hakkimda.html">About Me</a></li>
+                <li><a href="gallery.html" class="active">Gallery</a></li>
+                <li><a href="/BilgiVeRehber/iletisim.html">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- En ust baslik -->
+    <section class="page-header">
+        <h1>Sea Views</h1>
+        <p>Deep blue waters, waves, and peaceful moments</p>
+    </section>
+
+    <!-- icerik -->
+    <section class="gallery-content">
+        <div class="container">
+
+            <div class="category-section">
+                <h2 class="category-title">🌊 Sea and Serenity</h2>
+                <p>
+                    The sea represents calmness, freedom, and tranquility for me.
+                    On this page, I share sea photographs that I took at different times
+                    and under various lighting conditions.
+                </p>
+            </div>
+
+            <!-- GALERI -->
+            <div class="category-section">
+                <h2 class="category-title">📸 Sea Photographs</h2>
+
+                <div class="gallery-grid">
+
+                    <div class="gallery-card" onclick="openModal('img/Dalga.JPG')">
+                        <div class="card-image" style="background-image:url('img/Dalga.JPG')"></div>
+                        <div class="card-content">
+                            <h3>The Sound of Waves</h3>
+                            <p>A wave scene captured on a windy day by the shore.</p>
+                        </div>
+                    </div>
+
+                    <div class="gallery-card" onclick="openModal('img/dalga2.JPG')">
+                        <div class="card-image" style="background-image:url('img/dalga2.JPG')"></div>
+                        <div class="card-content">
+                            <h3>Sunset</h3>
+                            <p>A peaceful moment when the sun meets the sea.</p>
+                        </div>
+                    </div>
+
+                    <div class="gallery-card" onclick="openModal('/img/sunset2.JPG')">
+                        <div class="card-image" style="background-image:url('/img/sunset2.JPG')"></div>
+                        <div class="card-content">
+                            <h3>Silent Coast</h3>
+                            <p>A calm shoreline far away from crowds.</p>
+                        </div>
+                    </div>
+
+                    <div class="gallery-card" onclick="openModal('/img/SakliGol.jpg')">
+                        <div class="card-image" style="background-image:url('/img/SakliGol.jpg')"></div>
+                        <div class="card-content">
+                            <h3>The Horizon Line</h3>
+                            <p>The point where the sea and the sky meet.</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <div id="photoModal" class="modal">
+        <span class="modal-close" onclick="closeModal()">&times;</span>
+        <img class="modal-content" id="modalImage">
+    </div>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <p>&copy; 2026 Gezi Günlüğüm | Web Design Final Project</p>
+    </footer>
+
+    <!-- JS -->
+    <script src="script.js"></script>
+
+</body>
+
+</html>

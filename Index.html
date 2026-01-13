@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gezi Günlüğüm - Home</title>
+    <link rel="stylesheet" href="Index.css">
+</head>
+
+<body>
+    <!-- tepe navbar kismi -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <h1 class="logo">Gezi Günlüğüm </h1>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="hakkimda.html">About Me</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="/BilgiVeRehber/iletisim.html">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section class="hero-section">
+        <div class="hero-overlay">
+            <div class="hero-content">
+                <h1 class="hero-title">My Travel Journal</h1>
+                <p class="hero-subtitle">A trip to the places I visited and photographed.</p>
+                <a href="gallery.html" class="hero-button">Explore Photos</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="welcome-section">
+        <div class="container">
+            <h2 class="section-title">Following Nature</h2>
+            <p class="welcome-text">
+                This website tells the story of a journey that stretches from the snowy peaks of Uludağ
+                to deep blue seas. Each photograph reflects a moment of nature, its silence, and its
+                breathtaking beauty. From mountain hikes to seaside walks, every frame holds a special
+                meaning for me.
+            </p>
+        </div>
+    </section>
+
+    <!-- one cikarrdigim fotograflar -->
+    <section class="featured-section">
+        <div class="container">
+            <h2 class="section-title">Featured Moments</h2>
+
+            <div class="photo-grid">
+                <!-- Photo 1 -->
+                <div class="photo-card">
+                    <div class="photo-image" style="background-image: url('img/evlerKarsiz.JPG');"
+                        onclick="openModal('img/evlerKarsiz.JPG')">
+                    </div>
+                    <div class="photo-info">
+                        <h3>At the Peak of Uludağ</h3>
+                        <p>City panorama beneath the snow cover</p>
+                    </div>
+                </div>
+
+                <!-- Photo 2 -->
+                <div class="photo-card">
+                    <div class="photo-image" style="background-image: url('img/dogaYol.JPG');"
+                        onclick="openModal('img/dogaYol.JPG')">
+                    </div>
+                    <div class="photo-info">
+                        <h3>Hiking Memories</h3>
+                        <p>Every step surrounded by nature</p>
+                    </div>
+                </div>
+
+                <!-- Photo 3 -->
+                <div class="photo-card">
+                    <div class="photo-image" style="background-image: url('img/karl─▒Evler.JPG');"
+                        onclick="openModal('img/karl─▒Evler.JPG')">
+                    </div>
+                    <div class="photo-info">
+                        <h3>Snowy Houses</h3>
+                        <p>A village view covered in snow</p>
+                    </div>
+                </div>
+
+                <!-- Photo 4 -->
+                <div class="photo-card">
+                    <div class="photo-image"
+                        style="background-image: url('/img/f80d355d-8d7e-4753-8d30-7168358af4c2.JPG');"
+                        onclick="openModal('/img/f80d355d-8d7e-4753-8d30-7168358af4c2.JPG')">
+                    </div>
+                    <div class="photo-info">
+                        <h3>Natural Beauty</h3>
+                        <p>A snowy landscape from my hiking trip</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div id="photoModal" class="modal">
+        <span class="modal-close" onclick="closeModal()">&times;</span>
+        <img class="modal-content" id="modalImage">
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>&copy; 2026 Gezi Günlüğüm | Web Design Final Project</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

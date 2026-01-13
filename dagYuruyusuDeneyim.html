@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mountain Hiking Experience - My Travel Journal</title>
+    <link rel="stylesheet" href="dagYuruyusuDeneyim.css">
+</head>
+
+<body>
+
+    <!-- navbar kismi -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <h1 class="logo">Gezi Günlüğüm </h1>
+            <ul class="nav-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="hakkimda.html">About Me</a></li>
+                <li><a href="gallery.html" class="active">Gallery</a></li>
+                <li><a href="/BilgiVeRehber/iletisim.html">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- tepe baslik -->
+    <section class="page-header">
+        <h1>Mountain Hiking Experience</h1>
+        <p>Quiet, peaceful, and educational moments spent at high altitudes</p>
+    </section>
+
+    <!-- icerik -->
+    <section class="gallery-content">
+        <div class="container">
+
+            <!-- aciklamalar -->
+            <div class="category-section">
+                <h2 class="category-title">⛰️ Hiking and Nature</h2>
+                <p>
+                    The photographs on this page were taken during my hiking trips and camping experiences.
+                    I started my hike early in the morning while the air was still cool.
+                    As I walked along forest trails, the silence and fresh air allowed me to completely
+                    escape the chaos of city life.
+                </p>
+                <p>
+                    As the paths continued, the terrain began to change; in some areas, the roads were
+                    covered with snow, while in others, the trees were surrounded by fog.
+                    These changing natural conditions made the hike both more challenging and more impressive.
+                </p>
+                <br>
+                <p>
+                    The landscape photos I took near the summit felt like a reward for all the exhaustion.
+                    The forests stretching below and the distant horizon disappearing into the distance
+                    once again reminded me how strong the connection with nature can be.
+                    This hike was not only a physical activity for me, but also a mental renewal experience.
+                </p>
+            </div>
+
+            <div class="category-section">
+                <h2 class="category-title">📸 Mountain Hiking Photos</h2>
+
+                <div class="gallery-grid">
+
+                    <div class="gallery-card" onclick="openModal('/img/dagAndCicek.JPG')">
+                        <div class="card-image" style="background-image:url('/img/dagAndCicek.JPG')"></div>
+                        <div class="card-content">
+                            <h3>Misty Summit</h3>
+                            <p>A peaceful hiking trail winding through the trees.</p>
+                        </div>
+                    </div>
+
+                    <div class="gallery-card" onclick="openModal('/img/Gokkusagi.JPG')">
+                        <div class="card-image" style="background-image:url('/img/Gokkusagi.JPG')"></div>
+                        <div class="card-content">
+                            <h3>Sunset and Mountain Ranges</h3>
+                            <p>A mountain path covered in fog during the early morning hours.</p>
+                        </div>
+                    </div>
+
+                    <div class="gallery-card" onclick="openModal('/img/yesilOrmanYol.JPG')">
+                        <div class="card-image" style="background-image:url('/img/yesilOrmanYol.JPG')"></div>
+                        <div class="card-content">
+                            <h3>The Magic of Belgrad</h3>
+                            <p>
+                                A road stretching through lush greenery, photographed during my hike in the Belgrad Forest.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="gallery-card" onclick="openModal('/img/yolDagda.JPG')">
+                        <div class="card-image" style="background-image:url('/img/yolDagda.JPG')"></div>
+                        <div class="card-content">
+                            <h3>Mountain Road</h3>
+                            <p>
+                                A unique moment captured during my autumn mountain hike.
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <div id="photoModal" class="modal">
+        <span class="modal-close" onclick="closeModal()">&times;</span>
+        <img class="modal-content" id="modalImage">
+    </div>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <p>&copy; 2026 Gezi Günlüğüm | Web Design Final Project</p>
+    </footer>
+
+    <!-- JS -->
+    <script src="script.js"></script>
+
+</body>
+
+</html>

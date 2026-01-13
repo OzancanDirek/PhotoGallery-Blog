@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>City Life - My Travel Journal</title>
+    <link rel="stylesheet" href="sehirYasami.css">
+</head>
+
+<body>
+    <!-- navbar kismi -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <h1 class="logo">Gezi Günlüğüm </h1>
+            <ul class="nav-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="hakkimda.html">About Me</a></li>
+                <li><a href="gallery.html" class="active">Gallery</a></li>
+                <li><a href="/BilgiVeRehber/iletisim.html">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- tepe baslik -->
+    <section class="page-header">
+        <h1>🏙️ City Life</h1>
+        <p>The unnoticed beauty hidden within the crowd and the heart of the city</p>
+    </section>
+
+    <!-- icerik -->
+    <section class="content-section">
+        <div class="container">
+
+            <div class="intro-text">
+                <h2>🚦 The Ever-Flowing City Life</h2>
+                <p>
+                    City life is often associated with rush, noise, and crowds, but when observed carefully,
+                    it reveals unique beauty in every corner. Streets passed by without notice during daily routines,
+                    details of old buildings, and lights reflecting on windows at sunset quietly tell the city’s story.
+                </p>
+
+                <p>
+                    The photographs on this page aim to capture moments that often go unnoticed while living in the city.
+                    A person sitting alone in a café, rain-soaked pavements, small shops in side streets,
+                    and brief pauses within the crowd are all reflected in these frames.
+                </p>
+
+                <p>
+                    City life is not only about speed and chaos; it is also an opportunity for discovery,
+                    observation, and collecting memories. Sometimes, stopping for a moment and noticing these small
+                    details within the crowd makes the city more meaningful.
+                </p>
+            </div>
+
+            <div class="photo-section">
+
+                <div class="photo-block">
+                    <div class="photo-large" style="background-image: url('img/Atasehir.jpg');"
+                        onclick="openModal('img/Atasehir.jpg')"></div>
+                    <div class="photo-description">
+                        <h3>🌅 Rising Buildings</h3>
+                        <p>
+                            The modern architecture of Ataşehir creates a stunning view at sunset,
+                            with light reflecting off the glass surfaces of the buildings.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="photo-block reverse">
+                    <div class="photo-large" style="background-image: url('img/sehirYasami.jpg');"
+                        onclick="openModal('img/sehirYasami.jpg')"></div>
+                    <div class="photo-description">
+                        <h3>🚶‍♂️ The City Crowd</h3>
+                        <p>
+                            This crowd, which I encounter every day near my home, reflects the dynamic nature of the city.
+                            The constant rush of people reminds us that life is always in motion.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="photo-block">
+                    <div class="photo-large" style="background-image: url('img/otoyol.jpg');"
+                        onclick="openModal('img/otoyol.jpg')"></div>
+                    <div class="photo-description">
+                        <h3>🌅 Şile Highway</h3>
+                        <p>
+                            This road, which I use every day on my way to school, offers a peaceful city view
+                            especially during sunrise.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="special-section">
+                <h2>✨ What Do I Want to Express Here?</h2>
+                <div class="special-grid">
+                    <div class="special-box">
+                        <h3>⏳ Passing Time</h3>
+                        <p>I try to capture the moment without getting lost in the flow of life.</p>
+                    </div>
+                    <div class="special-box">
+                        <h3>👁️ Awareness</h3>
+                        <p>I want to draw attention to small details that are often overlooked in city life.</p>
+                    </div>
+                    <div class="special-box">
+                        <h3>🌆 Silence Within the Crowd</h3>
+                        <p>Sometimes, even in the middle of a crowd, one can find a moment that truly belongs to them.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div id="photoModal" class="modal">
+        <span class="modal-close" onclick="closeModal()">&times;</span>
+        <img class="modal-content" id="modalImage" alt="Enlarged photo">
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>&copy; 2026 Gezi Günlüğüm | Web Design Final Project</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
